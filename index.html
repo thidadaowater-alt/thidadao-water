@@ -15,7 +15,6 @@
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- ดึงรูป Logo.png มาแสดงตรงนี้ -->
             <a href="#hero" class="flex items-center gap-2">
                 <img src="images/Logo.png" alt="โลโก้น้ำดื่มธิดาดาว" class="h-12 md:h-14 object-contain">
             </a>
@@ -23,6 +22,7 @@
                 <a href="#hero" class="hover:text-blue-600 transition font-medium">หน้าแรก</a>
                 <a href="#standards" class="hover:text-blue-600 transition font-medium">มาตรฐานโรงงาน</a>
                 <a href="#products" class="hover:text-blue-600 transition font-medium">สินค้าของเรา</a>
+                <a href="#gallery" class="hover:text-blue-600 transition font-medium">ภาพกิจกรรม</a>
                 <a href="#contact" class="hover:text-blue-600 transition font-medium">ติดต่อเรา</a>
             </div>
         </div>
@@ -30,7 +30,6 @@
 
     <!-- Hero Section -->
     <section id="hero" class="bg-gradient-to-br from-blue-700 to-blue-500 text-white py-24 px-4 relative overflow-hidden">
-        <!-- เพิ่มพื้นหลังเป็นลายน้ำจางๆ (ถ้าต้องการ) -->
         <div class="absolute inset-0 opacity-10 bg-[url('images/bul.jpg')] bg-cover bg-center"></div>
         <div class="max-w-4xl mx-auto text-center relative z-10">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">น้ำดื่มธิดาดาว</h1>
@@ -102,7 +101,6 @@
                 </div>
                 <!-- 1500ml -->
                 <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
-                    <!-- ใส่ชื่อไฟล์รูป 1500ml ตรงนี้เมื่ออัปโหลดแล้ว -->
                     <img src="images/product-1500ml.jpg" alt="น้ำดื่มขนาด 1500 ml" class="w-full h-56 object-contain rounded-2xl mb-4 bg-slate-100">
                     <h3 class="text-xl font-bold text-blue-700">ขนาด 1500 ml.</h3>
                     <p class="text-sm text-slate-500 mt-3">ปริมาณคุ้มค่า เหมาะสำหรับการแช่เย็นบริโภคในครอบครัว</p>
@@ -123,6 +121,35 @@
                     </svg>
                     สั่งซื้อสินค้าผ่าน LINE
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (ส่วนแสดงภาพกิจกรรมและโรงงาน) -->
+    <section id="gallery" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">ภาพกิจกรรมและโรงงาน</h2>
+            <p class="text-slate-600 mb-12 text-lg">บรรยากาศการทำงาน กระบวนการผลิต และกิจกรรมของเรา</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <img src="gallery/g1.jpg" alt="ภาพกิจกรรม 1" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <img src="gallery/g2.jpg" alt="ภาพกิจกรรม 2" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <img src="gallery/g3.jpg" alt="ภาพกิจกรรม 3" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <img src="gallery/g4.jpg" alt="ภาพกิจกรรม 4" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <img src="gallery/g5.jpg" alt="ภาพกิจกรรม 5" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition">
+                    <img src="gallery/g6.jpg" alt="ภาพกิจกรรม 6" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
             </div>
         </div>
     </section>
