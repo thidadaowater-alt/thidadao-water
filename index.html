@@ -20,8 +20,9 @@
             </a>
             <div class="hidden md:flex space-x-6">
                 <a href="#hero" class="hover:text-blue-600 transition font-medium">หน้าแรก</a>
+                <a href="#about" class="hover:text-blue-600 transition font-medium">เกี่ยวกับเรา</a>
                 <a href="#standards" class="hover:text-blue-600 transition font-medium">มาตรฐานโรงงาน</a>
-                <a href="#products" class="hover:text-blue-600 transition font-medium">สินค้าของเรา</a>
+                <a href="#products" class="hover:text-blue-600 transition font-medium">สินค้าและบริการ</a>
                 <a href="#gallery" class="hover:text-blue-600 transition font-medium">ภาพกิจกรรม</a>
                 <a href="#contact" class="hover:text-blue-600 transition font-medium">ติดต่อเรา</a>
             </div>
@@ -32,116 +33,181 @@
     <section id="hero" class="bg-gradient-to-br from-blue-700 to-blue-500 text-white py-24 px-4 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[url('images/bul.jpg')] bg-cover bg-center"></div>
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">น้ำดื่มธิดาดาว</h1>
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">💧 น้ำดื่มธิดาดาว</h1>
             <p class="text-xl md:text-2xl text-blue-50 mb-10 font-light drop-shadow">
-                บริสุทธิ์ ใส ใส่ใจทุกหยด
+                "บริสุทธิ์ ใส ใส่ใจทุกหยด"
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#products" class="bg-white text-blue-600 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-blue-50 transition transform hover:-translate-y-1 text-lg">
-                    สั่งซื้อน้ำดื่ม
+                    🛒 สั่งซื้อน้ำดื่ม
                 </a>
                 <button onclick="openLineModal()" class="bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white/20 transition transform hover:-translate-y-1 text-lg">
-                    ปรึกษาทำแบรนด์ตัวเอง
+                    🏷️ 🏷️ ปรึกษาทำแบรนด์ตัวเอง (OEM)
                 </button>
             </div>
         </div>
     </section>
 
+    <!-- About Us Section (เพิ่มส่วนเกี่ยวกับเรา) -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold text-sm tracking-wider uppercase bg-blue-50 px-4 py-2 rounded-full border border-blue-100">About Us</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mt-4 mb-4">🏭 เกี่ยวกับเรา - โรงงานน้ำดื่มธิดาดาว</h2>
+                <p class="text-slate-600 text-lg max-w-3xl mx-auto">จุดเริ่มต้นแห่งความสดชื่นบริสุทธิ์ ส่งตรงถึงมือผู้บริโภคด้วยความใส่ใจเป็นอันดับหนึ่ง</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+                    <p class="bg-slate-50 p-6 rounded-3xl border border-slate-100 shadow-sm">
+                        💧 <strong class="text-slate-800">โรงงานน้ำดื่มธิดาดาว (Thidadao)</strong> เป็นผู้ผลิตและจัดจำหน่ายน้ำดื่มที่ได้มาตรฐาน ตั้งอยู่ในอำเภอนิคมน้ำอูน จังหวัดสกลนคร[cite: 1, 2] เรามุ่งมั่นส่งมอบน้ำดื่มที่สะอาด ปลอดภัย ผ่านกระบวนการกรองที่มีประสิทธิภาพ เพื่อตอบสนองความต้องการของครัวเรือน องค์กร ร้านอาหาร และหน่วยงานต่างๆ ในพื้นที่และจังหวัดใกล้เคียง[cite: 1, 2]
+                    </p>
+                    <p>
+                        เราเชื่อว่า "น้ำ" คือปัจจัยสำคัญที่สุดของชีวิต[cite: 2] ทุกขั้นตอนการผลิตของเราจึงเต็มไปด้วยความใส่ใจ ตั้งแต่การคัดกรองแหล่งน้ำคุณภาพ[cite: 2] ผ่านเทคโนโลยีการผลิตที่ทันสมัยระดับสากล จนถึงการบรรจุขวดที่ได้มาตรฐาน[cite: 2]
+                    </p>
+                </div>
+                <!-- Vision Card -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-3xl border border-blue-100 shadow-sm relative overflow-hidden">
+                    <div class="text-4xl mb-4">🌟</div>
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">วิสัยทัศน์ (Vision)</h3>
+                    <blockquote class="text-lg text-blue-800 italic font-medium leading-relaxed">
+                        "ก้าวขึ้นเป็นแบรนด์น้ำดื่มที่ครองใจผู้บริโภค ด้วยมาตรฐานความบริสุทธิ์ระดับสากล พร้อมขับเคลื่อนธุรกิจควบคู่ไปกับการดูแลสังคม"[cite: 2]
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- Why Choose Us Cards -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center text-slate-800 mb-10">✨ ทำไมต้องเลือกโรงงานน้ำดื่มธิดาดาว?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm text-center hover:shadow-md transition">
+                        <div class="text-5xl mb-4">🚚</div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">กำลังการผลิตพร้อมรองรับ</h4>
+                        <p class="text-slate-600 text-sm">บริหารงานอย่างเป็นระบบ มีสต็อกสินค้าและรอบการจัดส่งที่ตรงเวลา[cite: 1]</p>
+                    </div>
+                    <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm text-center hover:shadow-md transition">
+                        <div class="text-5xl mb-4">🛡️</div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">มาตรฐานความสะอาด</h4>
+                        <p class="text-slate-600 text-sm">ควบคุมคุณภาพทุกขั้นตอน ตั้งแต่กระบวนการผลิตจนถึงการส่งมอบ[cite: 1, 2]</p>
+                    </div>
+                    <div class="p-8 bg-slate-50 rounded-3xl border border-slate-100 shadow-sm text-center hover:shadow-md transition">
+                        <div class="text-5xl mb-4">🤝</div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-2">บริการในพื้นที่อย่างเข้าถึง</h4>
+                        <p class="text-slate-600 text-sm">เข้าใจความต้องการของลูกค้าในจังหวัดสกลนครและพื้นที่ใกล้เคียงเป็นอย่างดี[cite: 1]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Factory Standards Section -->
-    <section id="standards" class="py-20 px-4 bg-white">
+    <section id="standards" class="py-20 px-4 bg-slate-50">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-blue-800 mb-4">มาตรฐานการผลิตระดับสากล</h2>
-            <p class="text-slate-600 mb-12 text-lg">เพื่อให้คุณมั่นใจในความสะอาด ปลอดภัย ไร้สารตกค้าง</p>
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">🔬 เทคโนโลยีและมาตรฐานการผลิต</h2>
+            <p class="text-slate-600 mb-12 text-lg">ตรวจสอบคุณภาพและควบคุมกระบวนการผลิตอย่างเข้มงวด เพื่อความสะอาด ปลอดภัย 100%[cite: 2]</p>
             
-            <!-- การ์ด 3 มาตรฐานหลัก -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                <div class="p-8 bg-blue-50 rounded-3xl hover:shadow-lg transition duration-300 border border-blue-100">
+                <div class="p-8 bg-white rounded-3xl hover:shadow-lg transition duration-300 border border-slate-100">
                     <div class="text-blue-600 text-5xl mb-4 font-bold">R.O.</div>
                     <h3 class="text-xl font-bold mb-3 text-slate-800">Reverse Osmosis</h3>
-                    <p class="text-slate-600">เทคโนโลยีการกรองรายละเอียด 0.0001 ไมครอน ขจัดสิ่งเจือปนหมดจด</p>
+                    <p class="text-slate-600">เทคโนโลยีการกรองที่ละเอียดถึง 0.0001 ไมครอน ขจัดสิ่งเจือปนหมดจด[cite: 2]</p>
                 </div>
-                <div class="p-8 bg-blue-50 rounded-3xl hover:shadow-lg transition duration-300 border border-blue-100">
+                <div class="p-8 bg-white rounded-3xl hover:shadow-lg transition duration-300 border border-slate-100">
                     <div class="text-blue-600 text-5xl mb-4 font-bold">U.V.</div>
                     <h3 class="text-xl font-bold mb-3 text-slate-800">Ultra Violet</h3>
-                    <p class="text-slate-600">ฆ่าเชื้อด้วยแสงยูวี ยับยั้งแบคทีเรียและจุลินทรีย์อย่างมีประสิทธิภาพ</p>
+                    <p class="text-slate-600">การฆ่าเชื้อด้วยแสงยูวี ยับยั้งการเจริญเติบโตของแบคทีเรียและจุลินทรีย์[cite: 2]</p>
                 </div>
-                <div class="p-8 bg-blue-50 rounded-3xl hover:shadow-lg transition duration-300 border border-blue-100">
+                <div class="p-8 bg-white rounded-3xl hover:shadow-lg transition duration-300 border border-slate-100">
                     <div class="text-blue-600 text-5xl mb-4 font-bold">O3</div>
                     <h3 class="text-xl font-bold mb-3 text-slate-800">Ozone System</h3>
-                    <p class="text-slate-600">ระบบฆ่าเชื้อขั้นตอนสุดท้าย มั่นใจได้ในความสะอาด ปลอดภัย 100%</p>
+                    <p class="text-slate-600">การฆ่าเชื้อขั้นตอนสุดท้าย มั่นใจได้ในความสะอาด ปลอดภัย ไร้สารตกค้าง[cite: 2]</p>
                 </div>
             </div>
 
             <!-- ภาพบรรยากาศโรงงาน (k1-k8) -->
-            <h3 class="text-2xl font-bold text-slate-800 mb-6">บรรยากาศและระบบการผลิตภายในโรงงาน</h3>
+            <h3 class="text-2xl font-bold text-slate-800 mb-6">📸 บรรยากาศและระบบการผลิตภายในโรงงาน</h3>
             <p class="text-slate-400 text-sm mb-4">(คลิกที่รูปภาพเพื่อขยายดูรูปขนาดใหญ่)</p>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-12">
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-sm cursor-pointer">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm cursor-pointer bg-white">
                     <img src="images/k1.jpg" alt="เครื่องจักรโรงงาน 1" class="w-full h-48 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-sm cursor-pointer">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm cursor-pointer bg-white">
                     <img src="images/k2.jpg" alt="เครื่องจักรโรงงาน 2" class="w-full h-48 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-sm cursor-pointer">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm cursor-pointer bg-white">
                     <img src="images/k3.jpg" alt="เครื่องจักรโรงงาน 3" class="w-full h-48 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-sm cursor-pointer">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm cursor-pointer bg-white">
                     <img src="images/k4.jpg" alt="เครื่องจักรโรงงาน 4" class="w-full h-48 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-sm cursor-pointer">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm cursor-pointer bg-white">
                     <img src="images/k5.jpg" alt="เครื่องจักรโรงงาน 5" class="w-full h-48 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-sm cursor-pointer">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm cursor-pointer bg-white">
                     <img src="images/k6.jpg" alt="เครื่องจักรโรงงาน 6" class="w-full h-48 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-sm cursor-pointer">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm cursor-pointer bg-white">
                     <img src="images/k7.jpg" alt="เครื่องจักรโรงงาน 7" class="w-full h-48 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-sm cursor-pointer">
+                <div class="overflow-hidden rounded-2xl border border-slate-200 shadow-sm cursor-pointer bg-white">
                     <img src="images/k8.jpg" alt="เครื่องจักรโรงงาน 8" class="w-full h-48 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
             </div>
 
             <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-8 py-4 rounded-full font-bold border border-blue-200 text-lg shadow-sm">
-                ผ่านการรับรอง อย. เลขที่ 47-2-00369-6-0001
+                ✅ ผ่านการรับรองมาตรฐานสากล เลขสารบบอาหาร อย. 47-2-00369-6-0001[cite: 2]
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-20 px-4 bg-slate-50">
+    <!-- Products & Services Section -->
+    <section id="products" class="py-20 px-4 bg-white">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-blue-800 mb-4">ผลิตภัณฑ์ของเรา</h2>
-            <p class="text-slate-600 mb-12 text-lg">มีให้เลือกหลากหลายขนาด ตอบโจทย์ทุกความต้องการ</p>
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">🍾 บริการและผลิตภัณฑ์ของเรา (Our Products & Services)</h2>
+            <p class="text-slate-600 mb-12 text-lg">ตอบโจทย์ทุกความต้องการ ดื่มมั่นใจได้ทุกวัน[cite: 2]</p>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16">
                 <!-- 350ml -->
-                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="bg-slate-50 p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
                     <img src="images/product-350ml.JPG" alt="น้ำดื่มขนาด 350 ml" class="w-full h-56 object-contain rounded-2xl mb-4 cursor-pointer preview-img">
                     <h3 class="text-xl font-bold text-blue-700">ขนาด 350 ml.</h3>
-                    <p class="text-sm text-slate-500 mt-3">พกพาสะดวก เหมาะสำหรับงานประชุม สัมมนา หรือกิจกรรมต่างๆ</p>
+                    <p class="text-sm text-slate-500 mt-3">กะทัดรัด พกพาสะดวก เหมาะสำหรับงานประชุม สัมมนา งานจัดเลี้ยง หรือกิจกรรมต่างๆ[cite: 2]</p>
                 </div>
                 <!-- 600ml -->
-                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="bg-slate-50 p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
                     <img src="images/product-600ml.JPG" alt="น้ำดื่มขนาด 600 ml" class="w-full h-56 object-contain rounded-2xl mb-4 cursor-pointer preview-img">
                     <h3 class="text-xl font-bold text-blue-700">ขนาด 600 ml.</h3>
-                    <p class="text-sm text-slate-500 mt-3">ขนาดมาตรฐานยอดนิยม พอเหมาะสำหรับดื่มดับกระหายระหว่างวัน</p>
+                    <p class="text-sm text-slate-500 mt-3">มาตรฐานยอดนิยม ขวดสวยจับถนัดมือ ฝาสีเขียวมิ้นต์ พอเหมาะสำหรับดื่มดับกระหายระหว่างวัน[cite: 2]</p>
                 </div>
                 <!-- 1500ml -->
-                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
-                    <img src="images/product-1500ml.jpg" alt="น้ำดื่มขนาด 1500 ml" class="w-full h-56 object-contain rounded-2xl mb-4 bg-slate-100 cursor-pointer preview-img">
+                <div class="bg-slate-50 p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
+                    <img src="images/product-1500ml.jpg" alt="น้ำดื่มขนาด 1500 ml" class="w-full h-56 object-contain rounded-2xl mb-4 bg-white cursor-pointer preview-img">
                     <h3 class="text-xl font-bold text-blue-700">ขนาด 1500 ml.</h3>
-                    <p class="text-sm text-slate-500 mt-3">ปริมาณคุ้มค่า เหมาะสำหรับการแช่เย็นบริโภคในครอบครัว</p>
+                    <p class="text-sm text-slate-500 mt-3">ปริมาณจุใจ สุดคุ้ม เหมาะสำหรับการบริโภคในครอบครัว หรือแช่เย็นไว้ดื่มในที่พักอาศัย[cite: 2]</p>
                 </div>
                 <!-- 18.9L -->
-                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
+                <div class="bg-slate-50 p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
                     <img src="images/product-18.9.jpg" alt="น้ำดื่มถัง 18.9 ลิตร" class="w-full h-56 object-contain rounded-2xl mb-4 cursor-pointer preview-img">
                     <h3 class="text-xl font-bold text-blue-700">ถัง 18.9 ลิตร</h3>
-                    <p class="text-sm text-slate-500 mt-3">บรรจุด้วยระบบปิด มั่นใจความสะอาด เหมาะสำหรับบ้านและออฟฟิศ</p>
+                    <p class="text-sm text-slate-500 mt-3">เครื่องบรรจุอัตโนมัติระบบปิด ผ่าน UV & O3 เหมาะสำหรับบ้าน สำนักงาน และออฟฟิศ[cite: 2]</p>
                 </div>
             </div>
-            
-            <!-- LINE Button -->
+
+            <!-- OEM Highlight Banner -->
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-3xl p-8 md:p-12 shadow-xl text-left flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="space-y-4 max-w-2xl">
+                    <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">OEM Service</span>
+                    <h3 class="text-2xl md:text-3xl font-bold">🏷️ บริการรับผลิตน้ำดื่มแบรนด์องค์กร (OEM)</h3>
+                    <p class="text-blue-100 leading-relaxed">
+                        ยกระดับภาพลักษณ์องค์กรของคุณด้วยน้ำดื่มแบรนด์ตัวเอง[cite: 2] เรายินดีให้บริการออกแบบฉลากและผลิตน้ำดื่มแบบครบวงจร เหมาะสำหรับโรงพยาบาล โรงแรม ร้านอาหาร องค์กรธุรกิจ งานอีเวนต์ หรือแบรนด์ส่วนตัว[cite: 1, 2]
+                    </p>
+                </div>
+                <button onclick="openLineModal()" class="bg-white text-blue-600 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-blue-50 transition whitespace-nowrap text-lg">
+                    ปรึกษาทำแบรนด์ LINE
+                </button>
+            </div>
+
+            <!-- LINE Action Button -->
             <div class="mt-12">
                 <button onclick="openLineModal()" class="inline-flex items-center justify-center gap-3 bg-[#00B900] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:bg-[#009900] transition transform hover:scale-105 w-full sm:w-auto">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
@@ -154,28 +220,28 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20 px-4 bg-white">
+    <section id="gallery" class="py-20 px-4 bg-slate-50">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-blue-800 mb-4">ภาพกิจกรรม</h2>
-            <p class="text-slate-600 mb-12 text-lg">กิจกรรมและการส่งมอบความสดชื่นให้กับลูกค้าของเรา</p>
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">🖼️ ภาพกิจกรรมและการจัดส่ง</h2>
+            <p class="text-slate-600 mb-12 text-lg">บรรยากาศการจัดส่งความสดชื่นถึงหน้าบ้านและองค์กรลูกค้าของเรา[cite: 6]</p>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 cursor-pointer">
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
                     <img src="gallery/g1.jpg" alt="ภาพกิจกรรม 1" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 cursor-pointer">
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
                     <img src="gallery/g2.jpg" alt="ภาพกิจกรรม 2" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 cursor-pointer">
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
                     <img src="gallery/g3.jpg" alt="ภาพกิจกรรม 3" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 cursor-pointer">
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
                     <img src="gallery/g4.jpg" alt="ภาพกิจกรรม 4" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 cursor-pointer">
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
                     <img src="gallery/g5.jpg" alt="ภาพกิจกรรม 5" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-100 cursor-pointer">
+                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
                     <img src="gallery/g6.jpg" alt="ภาพกิจกรรม 6" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
                 </div>
             </div>
@@ -185,26 +251,27 @@
     <!-- Footer -->
     <footer id="contact" class="bg-slate-900 text-slate-300 py-16 px-4 text-center">
         <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold text-white mb-6">บริษัท ธิดาดาว จำกัด</h3>
-            <div class="space-y-3 mb-8">
-                <p>📍 เลขที่ 114 หมู่ 6 ตำบลหนองปลิง อำเภอนิคมน้ำอูน จังหวัดสกลนคร 47270</p>
-                <p>📞 โทร: 065-894-4614 (แล่นแต), 097-240-8178 (หยาด)</p>
-                <p>📄 เลขประจำตัวผู้เสียภาษี: 0475568000588</p>
+            <h3 class="text-3xl font-bold text-white mb-6">🏢 บริษัท ธิดาดาว จำกัด</h3>
+            <p class="text-blue-400 font-medium mb-6">THIDA DAW CO., LTD.[cite: 2]</p>
+            <div class="space-y-3 mb-8 text-lg">
+                <p>📍 <strong>ที่ตั้งโรงงาน / สำนักงาน:</strong> เลขที่ 114 หมู่ 6 ตำบลหนองปลิง อำเภอนิคมน้ำอูน จังหวัดสกลนคร 47270[cite: 2, 3, 4]</p>
+                <p>📞 <strong>เบอร์โทรติดต่อ:</strong> 065-894-4614 (แล่นแต), 097-240-8178[cite: 6]</p>
+                <p>https://www.facebook.com/profile.php?id=100082565437150</p>
+                <p>📄 <strong>เลขประจำตัวผู้เสียภาษี:</strong> 0475568000588[cite: 2, 3, 4]</p>
             </div>
-            <div class="border-t border-slate-700 pt-8 mt-8">
-                <p class="text-sm text-slate-500">©2026 Thidadaw Co., Ltd. All Rights Reserved.</p>
+            <div class="border-t border-slate-800 pt-8 mt-8">
+                <p class="text-sm text-slate-500">©2026 Thidadao Co., Ltd. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- 1. POPUP MODAL สำหรับ LINE QR CODE -->
+    <!-- POPUP MODAL สำหรับ LINE QR CODE -->
     <div id="lineModal" class="fixed inset-0 bg-black/70 z-[100] hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl p-6 max-w-sm w-full text-center relative shadow-2xl animate-fade-in">
+        <div class="bg-white rounded-3xl p-6 max-w-sm w-full text-center relative shadow-2xl">
             <button onclick="closeLineModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-2xl font-bold">✕</button>
-            <h3 class="text-2xl font-bold text-blue-800 mb-2">สแกนเพื่อติดต่อ LINE</h3>
-            <p class="text-slate-500 text-sm mb-4">สแกน QR Code ด้านล่างเพื่อสั่งซื้อน้ำดื่มหรือสอบถามข้อมูลเพิ่มเติม</p>
+            <h3 class="text-2xl font-bold text-blue-800 mb-2">📱 สแกนเพื่อติดต่อ LINE</h3>
+            <p class="text-slate-500 text-sm mb-4">สแกน QR Code ด้านล่างเพื่อสั่งซื้อน้ำดื่มหรือสอบถามข้อมูลเพิ่มเติม[cite: 2, 6]</p>
             <div class="bg-slate-100 p-4 rounded-2xl mb-4 flex justify-center">
-                <!-- ดึงรูปภาพ QR Code จาก images/line.png -->
                 <img src="images/line.png" alt="LINE QR Code น้ำดื่มธิดาดาว" class="w-64 h-64 object-contain rounded-lg">
             </div>
             <button onclick="closeLineModal()" class="w-full bg-slate-200 text-slate-700 font-bold py-3 rounded-full hover:bg-slate-300 transition">
@@ -213,15 +280,14 @@
         </div>
     </div>
 
-    <!-- 2. POPUP MODAL สำหรับขยายรูปภาพเต็มจอ -->
+    <!-- POPUP MODAL สำหรับขยายรูปภาพเต็มจอ -->
     <div id="imageModal" class="fixed inset-0 bg-black/90 z-[100] hidden flex items-center justify-center p-4 cursor-pointer" onclick="closeImageModal()">
         <button class="absolute top-6 right-6 text-white text-4xl font-bold hover:text-slate-300">✕</button>
         <img id="modalImage" src="" alt="ขยายรูปภาพ" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
     </div>
 
-    <!-- JAVASCRIPT สำหรับควบคุมระบบ POPUP -->
+    <!-- JAVASCRIPT -->
     <script>
-        // ฟังก์ชันเปิด-ปิด LINE QR Code Modal
         function openLineModal() {
             document.getElementById('lineModal').classList.remove('hidden');
         }
@@ -229,7 +295,6 @@
             document.getElementById('lineModal').classList.add('hidden');
         }
 
-        // ฟังก์ชันเปิด-ปิด Image Preview Modal (คลิกรูปภาพขยายใหญ่)
         const imageModal = document.getElementById('imageModal');
         const modalImage = document.getElementById('modalImage');
 
@@ -245,7 +310,6 @@
             imageModal.classList.add('hidden');
         }
 
-        // กดปุ่ม Esc บนคีย์บอร์ดเพื่อปิด Popups
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeLineModal();
