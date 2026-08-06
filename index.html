@@ -3,155 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บริษัท ธิดาดาว จำกัด - น้ำดื่มบริสุทธิ์สะอาดใส</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>น้ำดื่มธิดาดาว - บริสุทธิ์ ใส ใส่ใจทุกหยด</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Prompt', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-slate-50 text-slate-800 scroll-smooth">
 
-    <!-- Navbar -->
+    <!-- Navigation Bar -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="bg-sky-600 text-white p-2 rounded-xl font-bold text-xl">ธิดาดาว</div>
-                <div>
-                    <span class="text-lg font-bold text-sky-900 block leading-tight">น้ำดื่มธิดาดาว</span>
-                    <span class="text-xs text-slate-500">บริษัท ธิดาดาว จำกัด</span>[cite: 2]
-                </div>
-            </div>
-            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#hero" class="hover:text-sky-600 transition">หน้าแรก</a>
-                <a href="#standards" class="hover:text-sky-600 transition">มาตรฐานการผลิต</a>
-                <a href="#products" class="hover:text-sky-600 transition">ผลิตภัณฑ์</a>
-                <a href="#contact" class="hover:text-sky-600 transition">ติดต่อเรา</a>
-            </div>
-            <div>
-                <a href="https://line.me" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-medium shadow-md transition flex items-center gap-2">
-                    สั่งซื้อผ่าน Line
-                </a>
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- ดึงรูป Logo.png มาแสดงตรงนี้ -->
+            <a href="#hero" class="flex items-center gap-2">
+                <img src="images/Logo.png" alt="โลโก้น้ำดื่มธิดาดาว" class="h-12 md:h-14 object-contain">
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#hero" class="hover:text-blue-600 transition font-medium">หน้าแรก</a>
+                <a href="#standards" class="hover:text-blue-600 transition font-medium">มาตรฐานโรงงาน</a>
+                <a href="#products" class="hover:text-blue-600 transition font-medium">สินค้าของเรา</a>
+                <a href="#contact" class="hover:text-blue-600 transition font-medium">ติดต่อเรา</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="relative bg-gradient-to-br from-sky-500 via-sky-600 to-blue-700 text-white py-24 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <span class="bg-sky-400/30 text-sky-100 text-sm font-medium px-4 py-1.5 rounded-full inline-block mb-6 backdrop-blur-sm">
-                น้ำดื่มธิดาดาว... บริสุทธิ์ ใส ใส่ใจทุกหยด[cite: 2]
-            </span>
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                ความสดชื่นบริสุทธิ์ ส่งตรงถึงมือคุณ[cite: 2]
-            </h1>
-            <p class="text-lg md:text-xl text-sky-100 max-w-2xl mx-auto mb-10 font-light">
-                ผลิตด้วยเทคโนโลยีทันสมัยระดับสากล สะอาด ปลอดภัย ได้มาตรฐาน อย.[cite: 2] พร้อมบริการรับผลิตน้ำดื่มติดแบรนด์ตัวเอง (OEM)[cite: 2]
+    <section id="hero" class="bg-gradient-to-br from-blue-700 to-blue-500 text-white py-24 px-4 relative overflow-hidden">
+        <!-- เพิ่มพื้นหลังเป็นลายน้ำจางๆ (ถ้าต้องการ) -->
+        <div class="absolute inset-0 opacity-10 bg-[url('images/bul.jpg')] bg-cover bg-center"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">น้ำดื่มธิดาดาว</h1>
+            <p class="text-xl md:text-2xl text-blue-50 mb-10 font-light drop-shadow">
+                บริสุทธิ์ ใส ใส่ใจทุกหยด
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://line.me" target="_blank" class="bg-white text-sky-600 hover:bg-sky-50 font-semibold px-8 py-4 rounded-xl shadow-lg transition text-lg">
+                <a href="#products" class="bg-white text-blue-600 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-blue-50 transition transform hover:-translate-y-1 text-lg">
                     สั่งซื้อน้ำดื่ม
                 </a>
-                <a href="https://line.me" target="_blank" class="bg-sky-700/60 hover:bg-sky-700 text-white border border-sky-400/50 font-semibold px-8 py-4 rounded-xl backdrop-blur-md transition text-lg">
-                    ปรึกษาทำแบรนด์ตัวเอง (OEM)[cite: 2]
+                <a href="#contact" class="bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white/20 transition transform hover:-translate-y-1 text-lg">
+                    ปรึกษาทำแบรนด์ตัวเอง
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Standards Section -->
-    <section id="standards" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">เทคโนโลยีและมาตรฐานการผลิต[cite: 2]</h2>
-                <p class="text-slate-600">มั่นใจในความสะอาดปลอดภัยทุกขั้นตอน ควบคุมคุณภาพอย่างเข้มงวด[cite: 2]</p>
-            </div>
+    <!-- Factory Standards Section -->
+    <section id="standards" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">มาตรฐานการผลิตระดับสากล</h2>
+            <p class="text-slate-600 mb-12 text-lg">เพื่อให้คุณมั่นใจในความสะอาด ปลอดภัย ไร้สารตกค้าง</p>
+            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-sky-50 p-8 rounded-2xl border border-sky-100 text-center">
-                    <div class="w-16 h-16 bg-sky-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-6 shadow-md">R.O.</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Reverse Osmosis[cite: 2]</h3>
-                    <p class="text-slate-600 text-sm">กรองละเอียดถึง 0.0001 ไมครอน ขจัดสิ่งเจือปนหมดจด[cite: 2]</p>
+                <!-- R.O. -->
+                <div class="p-8 bg-blue-50 rounded-3xl hover:shadow-lg transition duration-300 border border-blue-100">
+                    <div class="text-blue-600 text-5xl mb-4 font-bold">R.O.</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Reverse Osmosis</h3>
+                    <p class="text-slate-600">เทคโนโลยีการกรองละเอียด 0.0001 ไมครอน ขจัดสิ่งเจือปนหมดจด</p>
                 </div>
-                <div class="bg-sky-50 p-8 rounded-2xl border border-sky-100 text-center">
-                    <div class="w-16 h-16 bg-sky-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-6 shadow-md">U.V.</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Ultra Violet[cite: 2]</h3>
-                    <p class="text-slate-600 text-sm">ฆ่าเชื้อด้วยแสงยูวี ยับยั้งแบคทีเรียและจุลินทรีย์[cite: 2]</p>
+                <!-- U.V. -->
+                <div class="p-8 bg-blue-50 rounded-3xl hover:shadow-lg transition duration-300 border border-blue-100">
+                    <div class="text-blue-600 text-5xl mb-4 font-bold">U.V.</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Ultra Violet</h3>
+                    <p class="text-slate-600">ฆ่าเชื้อด้วยแสงยูวี ยับยั้งแบคทีเรียและจุลินทรีย์อย่างมีประสิทธิภาพ</p>
                 </div>
-                <div class="bg-sky-50 p-8 rounded-2xl border border-sky-100 text-center">
-                    <div class="w-16 h-16 bg-sky-600 text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-6 shadow-md">O3</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Ozone System[cite: 2]</h3>
-                    <p class="text-slate-600 text-sm">ฆ่าเชื้อขั้นตอนสุดท้าย สะอาด ปลอดภัย ไร้สารตกค้าง[cite: 2]</p>
+                <!-- Ozone -->
+                <div class="p-8 bg-blue-50 rounded-3xl hover:shadow-lg transition duration-300 border border-blue-100">
+                    <div class="text-blue-600 text-5xl mb-4 font-bold">O3</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Ozone System</h3>
+                    <p class="text-slate-600">ระบบฆ่าเชื้อขั้นตอนสุดท้าย มั่นใจได้ในความสะอาด ปลอดภัย 100%</p>
                 </div>
             </div>
-            <div class="mt-12 text-center bg-slate-100 py-4 rounded-xl border border-slate-200">
-                <span class="text-slate-700 font-medium">เลขสารบบอาหาร อย. 47-2-00369-6-0001[cite: 2]</span>
+            
+            <div class="mt-12 inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-8 py-4 rounded-full font-bold border border-blue-200 text-lg shadow-sm">
+                ผ่านการรับรอง อย. เลขที่ 47-2-00369-6-0001
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="py-20 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">ผลิตภัณฑ์ของเรา[cite: 2]</h2>
-                <p class="text-slate-600">ตอบโจทย์ทุกความต้องการ ดื่มมั่นใจได้ทุกวัน[cite: 2]</p>
+    <section id="products" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">ผลิตภัณฑ์ของเรา</h2>
+            <p class="text-slate-600 mb-12 text-lg">มีให้เลือกหลากหลายขนาด ตอบโจทย์ทุกความต้องการ</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- 350ml -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
+                    <img src="images/product-350ml.JPG" alt="น้ำดื่มขนาด 350 ml" class="w-full h-56 object-contain rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold text-blue-700">ขนาด 350 ml.</h3>
+                    <p class="text-sm text-slate-500 mt-3">พกพาสะดวก เหมาะสำหรับงานประชุม สัมมนา หรือกิจกรรมต่างๆ</p>
+                </div>
+                <!-- 600ml -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
+                    <img src="images/product-600ml.JPG" alt="น้ำดื่มขนาด 600 ml" class="w-full h-56 object-contain rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold text-blue-700">ขนาด 600 ml.</h3>
+                    <p class="text-sm text-slate-500 mt-3">ขนาดมาตรฐานยอดนิยม พอเหมาะสำหรับดื่มดับกระหายระหว่างวัน</p>
+                </div>
+                <!-- 1500ml -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
+                    <!-- ใส่ชื่อไฟล์รูป 1500ml ตรงนี้เมื่ออัปโหลดแล้ว -->
+                    <img src="images/product-1500ml.jpg" alt="น้ำดื่มขนาด 1500 ml" class="w-full h-56 object-contain rounded-2xl mb-4 bg-slate-100">
+                    <h3 class="text-xl font-bold text-blue-700">ขนาด 1500 ml.</h3>
+                    <p class="text-sm text-slate-500 mt-3">ปริมาณคุ้มค่า เหมาะสำหรับการแช่เย็นบริโภคในครอบครัว</p>
+                </div>
+                <!-- 18.9L -->
+                <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition duration-300">
+                    <img src="images/product-18.9.jpg" alt="น้ำดื่มถัง 18.9 ลิตร" class="w-full h-56 object-contain rounded-2xl mb-4">
+                    <h3 class="text-xl font-bold text-blue-700">ถัง 18.9 ลิตร</h3>
+                    <p class="text-sm text-slate-500 mt-3">บรรจุด้วยระบบปิด มั่นใจความสะอาด เหมาะสำหรับบ้านและออฟฟิศ</p>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Product 1 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="bg-sky-100 h-48 rounded-xl flex items-center justify-center text-sky-600 font-bold mb-4">ขนาด 350 ml</div>
-                        <h3 class="font-bold text-lg mb-1">ขนาด 350 ml (กะทัดรัด)[cite: 2]</h3>
-                        <p class="text-slate-600 text-sm mb-4">พกพาสะดวก เหมาะสำหรับงานประชุม สัมมนา งานจัดเลี้ยง หรือแจกกิจกรรม[cite: 2]</p>
-                    </div>
-                    <a href="https://line.me" target="_blank" class="w-full bg-sky-600 hover:bg-sky-700 text-white py-2.5 rounded-xl font-medium text-center transition">สั่งซื้อผ่าน Line</a>
-                </div>
-                <!-- Product 2 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="bg-sky-100 h-48 rounded-xl flex items-center justify-center text-sky-600 font-bold mb-4">ขนาด 600 ml</div>
-                        <h3 class="font-bold text-lg mb-1">ขนาด 600 ml (ยอดนิยม)[cite: 2]</h3>
-                        <p class="text-slate-600 text-sm mb-4">ขวดสวยงามจับถนัดมือ ฝาสีเขียวมิ้นต์โดดเด่น เหมาะดื่มดับกระหายระหว่างวัน[cite: 2]</p>
-                    </div>
-                    <a href="https://line.me" target="_blank" class="w-full bg-sky-600 hover:bg-sky-700 text-white py-2.5 rounded-xl font-medium text-center transition">สั่งซื้อผ่าน Line</a>
-                </div>
-                <!-- Product 3 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="bg-sky-100 h-48 rounded-xl flex items-center justify-center text-sky-600 font-bold mb-4">ขนาด 1500 ml</div>
-                        <h3 class="font-bold text-lg mb-1">ขนาด 1500 ml (สุดคุ้ม)[cite: 2]</h3>
-                        <p class="text-slate-600 text-sm mb-4">ปริมาณจุใจ คุ้มค่า เหมาะสำหรับการบริโภคในครอบครัว หรือแช่เย็นไว้ดื่ม[cite: 2]</p>
-                    </div>
-                    <a href="https://line.me" target="_blank" class="w-full bg-sky-600 hover:bg-sky-700 text-white py-2.5 rounded-xl font-medium text-center transition">สั่งซื้อผ่าน Line</a>
-                </div>
-                <!-- Product 4 -->
-                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="bg-sky-100 h-48 rounded-xl flex items-center justify-center text-sky-600 font-bold mb-4">ถัง 18.9 ลิตร</div>
-                        <h3 class="font-bold text-lg mb-1">น้ำดื่มแบบถัง (18.9 ลิตร)[cite: 2]</h3>
-                        <p class="text-slate-600 text-sm mb-4">เหมาะสำหรับออฟฟิศ สำนักงาน และครอบครัว บรรจุด้วยเครื่องจักรระบบปิด[cite: 2]</p>
-                    </div>
-                    <a href="https://line.me" target="_blank" class="w-full bg-sky-600 hover:bg-sky-700 text-white py-2.5 rounded-xl font-medium text-center transition">สั่งซื้อผ่าน Line</a>
-                </div>
+            
+            <!-- LINE Button -->
+            <div class="mt-12">
+                <a href="#" target="_blank" class="inline-flex items-center justify-center gap-3 bg-[#00B900] text-white font-bold text-xl px-12 py-5 rounded-full shadow-xl hover:bg-[#009900] transition transform hover:scale-105 w-full sm:w-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 0c4.411 0 8 2.912 8 6.492 0 1.433-.555 2.723-1.715 3.994-1.678 1.452-4.358 2.125-4.285 2.228.008.014.031.116.031.116l-.198.852c-.052.226-.247.362-.394.288-.146-.075-1.464-1.004-3.886-3.112C1.282 9.09 0 7.79 0 6.492 0 2.912 3.59 0 8 0z"/>
+                    </svg>
+                    สั่งซื้อสินค้าผ่าน LINE
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer / Contact -->
-    <footer id="contact" class="bg-slate-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-                <h2 class="text-2xl font-bold mb-4">บริษัท ธิดาดาว จำกัด[cite: 2]</h2>
-                <p class="text-slate-400 mb-2">ที่ตั้งโรงงาน: เลขที่ 114 หมู่ 6 ตำบลหนองปลิง อำเภอนิคมน้ำอูน จังหวัดสกลนคร 47270[cite: 2]</p>
-                <p class="text-slate-400 mb-2">เบอร์โทรติดต่อ: 065-894-4614 (แล่นแต)[cite: 2, 6]</p>
-                <p class="text-slate-400">Email: thidadao.water@gmail.com[cite: 3]</p>
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-slate-300 py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold text-white mb-6">บริษัท ธิดาดาว จำกัด</h3>
+            <div class="space-y-3 mb-8">
+                <p>📍 เลขที่ 114 หมู่ 6 ตำบลหนองปลิง อำเภอนิคมน้ำอูน จังหวัดสกลนคร 47270</p>
+                <p>📞 โทร: 065-894-4614 (แล่นแต), 097-240-8178 (หยาด)</p>
+                <p>📄 เลขประจำตัวผู้เสียภาษี: 0475568000588</p>
             </div>
-            <div class="flex flex-col md:items-end">
-                <a href="https://line.me" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition text-lg flex items-center gap-3">
-                    แอด Line สั่งซื้อน้ำดื่มทันที
-                </a>
-                <p class="text-slate-500 text-sm mt-4">&copy; 2026 Thidadaw Co., Ltd. All Rights Reserved.[cite: 2]</p>
+            <div class="border-t border-slate-700 pt-8 mt-8">
+                <p class="text-sm text-slate-500">©2026 Thidadao Co., Ltd. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
