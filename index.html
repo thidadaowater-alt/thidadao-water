@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Prompt', sans-serif; }
+        /* สไตล์สำหรับปรับการเลื่อนของสไลด์โชว์ให้นุ่มนวล */
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 scroll-smooth">
@@ -223,32 +228,50 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Gallery Section (เพิ่มลูกเล่น Image Carousel Slider สไลด์รูปภาพวนลูปอัตโนมัติ) -->
     <section id="gallery" class="py-20 px-4 bg-slate-50">
-        <div class="max-w-6xl mx-auto text-center">
+        <div class="max-w-5xl mx-auto text-center">
             <h2 class="text-3xl font-bold text-blue-800 mb-4">🖼️ ภาพกิจกรรมและการจัดส่ง</h2>
-            <p class="text-slate-600 mb-12 text-lg">บรรยากาศการจัดส่งความสดชื่นถึงหน้าบ้านและองค์กรลูกค้าของเรา[cite: 6]</p>
+            <p class="text-slate-600 mb-8 text-lg">บรรยากาศการจัดส่งความสดชื่นถึงหน้าบ้านและองค์กรลูกค้าของเรา[cite: 6]</p>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
-                    <img src="gallery/g1.jpg" alt="ภาพกิจกรรม 1" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
+            <!-- Carousel Container -->
+            <div class="relative overflow-hidden rounded-3xl shadow-lg border border-slate-200 bg-white group">
+                <!-- Track เลื่อนภาพ -->
+                <div id="carouselTrack" class="carousel-track">
+                    <div class="min-w-full h-[350px] md:h-[500px]">
+                        <img src="gallery/g1.jpg" alt="ภาพกิจกรรม 1" class="w-full h-full object-cover cursor-pointer preview-img">
+                    </div>
+                    <div class="min-w-full h-[350px] md:h-[500px]">
+                        <img src="gallery/g2.jpg" alt="ภาพกิจกรรม 2" class="w-full h-full object-cover cursor-pointer preview-img">
+                    </div>
+                    <div class="min-w-full h-[350px] md:h-[500px]">
+                        <img src="gallery/g3.jpg" alt="ภาพกิจกรรม 3" class="w-full h-full object-cover cursor-pointer preview-img">
+                    </div>
+                    <div class="min-w-full h-[350px] md:h-[500px]">
+                        <img src="gallery/g4.jpg" alt="ภาพกิจกรรม 4" class="w-full h-full object-cover cursor-pointer preview-img">
+                    </div>
+                    <div class="min-w-full h-[350px] md:h-[500px]">
+                        <img src="gallery/g5.jpg" alt="ภาพกิจกรรม 5" class="w-full h-full object-cover cursor-pointer preview-img">
+                    </div>
+                    <div class="min-w-full h-[350px] md:h-[500px]">
+                        <img src="gallery/g6.jpg" alt="ภาพกิจกรรม 6" class="w-full h-full object-cover cursor-pointer preview-img">
+                    </div>
                 </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
-                    <img src="gallery/g2.jpg" alt="ภาพกิจกรรม 2" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
-                </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
-                    <img src="gallery/g3.jpg" alt="ภาพกิจกรรม 3" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
-                </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
-                    <img src="gallery/g4.jpg" alt="ภาพกิจกรรม 4" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
-                </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
-                    <img src="gallery/g5.jpg" alt="ภาพกิจกรรม 5" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
-                </div>
-                <div class="overflow-hidden rounded-2xl shadow-sm border border-slate-200 cursor-pointer bg-white">
-                    <img src="gallery/g6.jpg" alt="ภาพกิจกรรม 6" class="w-full h-64 object-cover hover:scale-105 transition duration-300 preview-img">
+
+                <!-- ปุ่มกดเลื่อนซ้าย-ขวา -->
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl transition opacity-0 group-hover:opacity-100">
+                    ❮
+                </button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl transition opacity-0 group-hover:opacity-100">
+                    ❯
+                </button>
+
+                <!-- จุดบอกตำแหน่งสไลด์ (Dots) -->
+                <div id="carouselDots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                    <!-- จะถูกสร้างผ่าน JS -->
                 </div>
             </div>
+            <p class="text-xs text-slate-400 mt-4">* สไลด์จะเลื่อนเปลี่ยนรูปภาพให้อัตโนมัติ หรือคลิกที่รูปเพื่อขยายใหญ่ได้</p>
         </div>
     </section>
 
@@ -260,7 +283,6 @@
             <div class="space-y-3 mb-8 text-lg">
                 <p>📍 <strong>ที่ตั้งโรงงาน / สำนักงาน:</strong> เลขที่ 114 หมู่ 6 ตำบลหนองปลิง อำเภอนิคมน้ำอูน จังหวัดสกลนคร 47270[cite: 1, 2, 3, 4]</p>
                 <p>📞 <strong>เบอร์โทรติดต่อ:</strong> 065-894-4614 (แล่นแต), 097-240-8178 (หยาด)[cite: 1, 2, 3, 4, 6]</p>
-                <!-- เพิ่มลิงก์ Facebook ตามที่ขอเรียบร้อยครับ -->
                 <p>
                     🌐 <strong>Facebook:</strong> 
                     <a href="https://www.facebook.com/profile.php?id=100082565437150" target="_blank" class="text-blue-400 hover:text-blue-300 underline font-medium transition ml-1">
@@ -298,6 +320,7 @@
 
     <!-- JAVASCRIPT -->
     <script>
+        // 1. ฟังก์ชันเปิด-ปิด LINE QR Code Modal
         function openLineModal() {
             document.getElementById('lineModal').classList.remove('hidden');
         }
@@ -305,6 +328,7 @@
             document.getElementById('lineModal').classList.add('hidden');
         }
 
+        // 2. ฟังก์ชันเปิด-ปิด Image Preview Modal (คลิกขยายรูป)
         const imageModal = document.getElementById('imageModal');
         const modalImage = document.getElementById('modalImage');
 
@@ -326,6 +350,58 @@
                 closeImageModal();
             }
         });
+
+        // 3. ระบบ Carousel Slider สไลด์ภาพกิจกรรมเลื่อนวนลูปอัตโนมัติ
+        const track = document.getElementById('carouselTrack');
+        const slides = track.children;
+        const totalSlides = slides.length;
+        const dotsContainer = document.getElementById('carouselDots');
+        let currentIndex = 0;
+        let slideInterval;
+
+        // สร้างจุด Dots ล่างสไลด์
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('button');
+            dot.className = `w-3 h-3 rounded-full transition ${i === 0 ? 'bg-white scale-125' : 'bg-white/50'}`;
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        }
+
+        function updateDots() {
+            const dots = dotsContainer.children;
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = `w-3 h-3 rounded-full transition ${i === currentIndex ? 'bg-white scale-125' : 'bg-white/50'}`;
+            }
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots();
+            resetInterval();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            goToSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            goToSlide(currentIndex);
+        }
+
+        function startInterval() {
+            slideInterval = setInterval(nextSlide, 3000); // เปลี่ยนรูปอัตโนมัติทุกๆ 3 วินาที
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startInterval();
+        }
+
+        // เริ่มทำงานสไลด์อัตโนมัติ
+        startInterval();
     </script>
 
 </body>
