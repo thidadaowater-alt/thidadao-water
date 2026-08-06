@@ -34,24 +34,48 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="bg-gradient-to-br from-blue-700 to-blue-500 text-white py-24 px-4 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[url('images/bul.jpg')] bg-cover bg-center"></div>
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-md">💧 น้ำดื่มธิดาดาว</h1>
-            <p class="text-xl md:text-2xl text-blue-50 mb-10 font-light drop-shadow">
-                "บริสุทธิ์ ใส ใส่ใจทุกหยด"
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#products" class="bg-white text-blue-600 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-blue-50 transition transform hover:-translate-y-1 text-lg">
-                    🛒 สั่งซื้อน้ำดื่ม
-                </a>
-                <button onclick="openLineModal()" class="bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-full hover:bg-white/20 transition transform hover:-translate-y-1 text-lg">
-                    🏷️ ปรึกษาทำแบรนด์ตัวเอง (OEM)
-                </button>
-            </div>
+    <!-- Hero Section (ปรับปรุงความโปร่งใส + ให้ภาพโรงงานด้านหลังเด่นชัดขึ้น) -->
+<section id="hero" class="relative py-28 md:py-36 px-4 overflow-hidden bg-slate-900">
+    
+    <!-- 1. ภาพฉากหลังอาคารโรงงาน (ใส่มุมมองภาพกว้างชัดเจน) -->
+    <div class="absolute inset-0 bg-[url('images/bul.jpg')] bg-cover bg-center transform scale-105 transition-transform duration-1000"></div>
+    
+    <!-- 2. Overlay แบบ Gradient ไล่เฉดสีเบาๆ (ไม่ทับบังภาพโรงงานจนเกินไป) -->
+    <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-950/60 to-transparent"></div>
+    
+    <!-- 3. เพิ่มการไล่เฉดมืดจากด้านล่างเพื่อเชื่อมกับเนื้อหาส่วนถัดไป -->
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
+
+    <!-- 4. เนื้อหาข้อความและปุ่มกด (พร้อม Glassmorphism เบาๆ ให้ข้อความอ่านง่าย) -->
+    <div class="max-w-5xl mx-auto relative z-10 text-left md:text-left flex flex-col items-start justify-center min-h-[300px]">
+        
+        <!-- ป้าย Badge ตกแต่ง -->
+        <span class="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-md border border-blue-400/30 text-blue-200 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 shadow-sm">
+            💧 มาตรฐานความสะอาดระดับสากล
+        </span>
+
+        <!-- หัวข้อหลัก -->
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 tracking-tight drop-shadow-lg leading-tight">
+            น้ำดื่มธิดาดาว
+        </h1>
+
+        <!-- สโลแกน -->
+        <p class="text-xl sm:text-2xl text-blue-100 mb-8 font-light drop-shadow max-w-2xl">
+            "บริสุทธิ์ ใส ใส่ใจทุกหยด"
+        </p>
+
+        <!-- ปุ่มกด Call-to-Action -->
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <a href="#products" class="inline-flex items-center justify-center gap-2 bg-white text-blue-700 font-bold px-8 py-4 rounded-full shadow-xl hover:bg-blue-50 hover:shadow-blue-500/20 transition duration-300 transform hover:-translate-y-1 text-lg">
+                🛒 สั่งซื้อน้ำดื่ม
+            </a>
+            <button onclick="openLineModal()" class="inline-flex items-center justify-center gap-2 bg-blue-600/40 backdrop-blur-md border-2 border-white/80 text-white font-bold px-8 py-4 rounded-full hover:bg-white hover:text-blue-700 transition duration-300 transform hover:-translate-y-1 text-lg shadow-lg">
+                🏷️ ปรึกษาทำแบรนด์ตัวเอง (OEM)
+            </button>
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- About Us Section -->
     <section id="about" class="py-20 px-4 bg-white">
